@@ -6,7 +6,7 @@
     --bg-color-3: #FFD1DC; /* Rosa pastel */
     --bg-color-4: #FFFFFF; /* Blanco puro */
     
-    /* Texto elegante: un tono vino/marrón muy oscuro para contrastar sin ser negro puro */
+    
     --text-primary: #5A3A46; 
     --text-secondary: #8B6373;
     --accent-color: #F8BBD0;
@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     
-    /* Fondo animado cálido y en movimiento */
+    
     background: linear-gradient(-45deg, var(--bg-color-1), var(--bg-color-2), var(--bg-color-3), var(--bg-color-4));
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
@@ -47,10 +47,10 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    color: #4A2E38; /* Tono más fuerte para títulos */
+    color: #4A2E38; 
 }
 
-/* --- Layout y Glassmorphism --- */
+
 .main-wrapper {
     max-width: 900px;
     width: 100%;
@@ -267,7 +267,7 @@ h1, h2, h3 {
     --bg-color-3: #FFD1DC; /* Rosa pastel */
     --bg-color-4: #FFFFFF; /* Blanco puro */
     
-    /* Texto elegante: un tono vino/marrón muy oscuro para contrastar sin ser negro puro */
+   
     --text-primary: #5A3A46; 
     --text-secondary: #8B6373;
     --accent-color: #F8BBD0;
