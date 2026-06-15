@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUTTET</title>
+    <!-- Google Fonts: Playfair Display & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        
+        <header class="hero glass-panel breathe">
+            <h1>TE AMO AMOR ESTOY FELIZ DE TENERTE</h1>
+            <p>encontrando en ti mi lugar seguro, el balance perfecto para mi mente y mi corazón.</p>
+        </header>
+
+        <section class="roulette-section glass-panel">
+            <h2>Nuestra Ruleta</h2>
+            <div class="roulette-container">
+                <div class="needle"></div>
+                <div class="wheel" id="wheel"></div>
+            </div>
+            <button id="spin-btn" class="luxury-btn">Girar Destino</button>
+        </section>
+
+        <!-- Modal -->
+        <div id="result-modal" class="modal hidden">
+            <div class="modal-content glass-panel">
+                <h3 id="result-text"></h3>
+                <button id="close-modal" class="luxury-btn">Cerrar</button>
+            </div>
+        </div>
+
+        <section class="memory-section glass-panel">
+            <h2>Conexión y Memoria</h2>
+            <p>Encuentra las parejas de nuestra historia.</p>
+            <div class="memory-grid" id="memory-grid"></div>
+        </section>
+
+        <section class="gallery-section glass-panel">
+            <h2>Nuestros Momentos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="imagenes/1.jpg" alt="Momento 1"></div>
+                <div class="gallery-item"><img src="imagenes/2.jpg" alt="Momento 2"></div>
+                <div class="gallery-item"><img src="imagenes/3.jpg" alt="Momento 3"></div>
+                <div class="gallery-item"><img src="imagenes/4.jpg" alt="Momento 4"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
