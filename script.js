@@ -8,32 +8,28 @@ const resultText = document.getElementById('result-text');
 const closeModal = document.getElementById('close-modal');
 
 const phrases = [
-    "Te amo vida hermosa", // 0-60 grados
-    "Bebita hermosa",      // 60-120
-    "Te amo nene",         // 120-180
-    "Mi nenita hermosa",   // 180-240
-    "Te amo mami",         // 240-300
-    "nenita hermosa" // 300-360
+    "Te amo vida hermosa", 
+    "Bebita hermosa",      
+    "Te amo nene",         
+    "Mi nenita hermosa",  
+    "Te amo mami",       
+    "nenita hermosa" 
 ];
 
 let currentRotation = 0;
 let isSpinning = false;
 
-// Evento para hacer girar la ruleta
 spinBtn.addEventListener('click', () => {
     if (isSpinning) return;
     isSpinning = true;
 
-    // Calcula giros extras (entre 5 y 10 vueltas) más un grado aleatorio
     const extraSpins = Math.floor(Math.random() * 5 + 5) * 360;
     const randomDegree = Math.floor(Math.random() * 360);
     
     currentRotation += extraSpins + randomDegree;
     
-    // Aplica la rotación al CSS
     wheel.style.transform = `rotate(${currentRotation}deg)`;
 
-    // Espera 4 segundos (lo que dura la animación CSS) para mostrar el mensaje
     setTimeout(() => {
         const normalizedDegree = (360 - (currentRotation % 360)) % 360;
         const winningIndex = Math.floor(normalizedDegree / 60);
@@ -44,7 +40,6 @@ spinBtn.addEventListener('click', () => {
     }, 4000); 
 });
 
-// Evento para cerrar el mensaje de la ruleta
 closeModal.addEventListener('click', () => {
     modal.classList.add('hidden');
 });
@@ -55,8 +50,7 @@ closeModal.addEventListener('click', () => {
 // ==========================================
 const memoryGrid = document.getElementById('memory-grid');
 
-// ¡AQUÍ VAN TUS FOTOS! 
-// Cambia 'ruta/tu-foto1.jpg' por el nombre real de tus imágenes.
+
 const cardImages = [
     'imagenes/1.jpg',
     'imagenes/2.jpg',
